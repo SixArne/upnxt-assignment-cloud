@@ -19,3 +19,41 @@ it("should return 300 on a perfect game", () => {
 
   expect(score).toBe(300);
 });
+
+it("should return 125", () => {
+  const input125: Game = [
+    [3, 6],
+    [5, 5],
+    [4, 6],
+    [10, 0],
+    [8, 2],
+    [4, 6],
+    [3, 5],
+    [3, 7],
+    [5, 1],
+    [5, 1, 0],
+  ];
+
+  const score = compute(input125);
+
+  expect(score).toBe(125);
+});
+
+it("should return 140", () => {
+  const input140: Game = [
+    [3, 7],
+    [10, 0],
+    [7, 3],
+    [3, 5],
+    [9, 0],
+    [4, 6],
+    [10, 0],
+    [3, 2],
+    [7, 3],
+    [3, 7, 7],
+  ];
+
+  const score = compute(input140);
+
+  expect(score).toBe(140);
+});
