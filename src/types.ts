@@ -14,3 +14,8 @@ export type Game = [
   Frame,
   LastFrame
 ];
+
+export type GameHistory = {
+  id: number;
+  score: number;
+}

@@ -57,3 +57,22 @@ it("should return 140", () => {
 
   expect(score).toBe(140);
 });
+
+it("should return 132", () => {
+  const input132: Game = [
+    [7, 3],
+    [10, 0],
+    [10, 0],
+    [2, 5],
+    [7, 2],
+    [9, 1],
+    [10, 0],
+    [3, 2],
+    [7, 3],
+    [2, 3, 0],
+  ];
+
+  const score = compute(input132);
+
+  expect(score).toBe(132);
+});
